@@ -73,18 +73,16 @@ body {
 .landing-page h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #66D9EF; /* Cyan heading color */
 }
 
 .landing-page p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #A6E22E; /* Greenish text color */
 }
 
 .landing-page .btn {
     padding: 10px 20px;
-    background-color: #FD971F; /* Orange button background */
+    background-color: #61dafb; /* Bright blue */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -92,7 +90,7 @@ body {
 }
 
 .landing-page .btn:hover {
-    background-color: #F92672; /* Pinkish hover color */
+    background-color: #42a5f5; /* Darker blue on hover */
 }
 
 /* General Section Styles */
@@ -102,7 +100,7 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    color: #D4D4D4; /* Light gray section heading color */
+    color: #D4D4D4; /* Section heading color */
 }
 
 /* Featured Products section */
@@ -141,18 +139,18 @@ h2 {
 .product h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #66D9EF; /* Cyan product name color */
+    color: #fff; /* Product name color */
 }
 
 .product p {
     margin-bottom: 15px;
-    color: #D4D4D4; /* Light text color */
+    color: #D4D4D4; /* Product description color */
 }
 
 .product .btn {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #FD971F; /* Orange button background */
+    background-color: #61dafb; /* Bright blue */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -160,167 +158,4 @@ h2 {
 }
 
 .product .btn:hover {
-    background-color: #F92672; /* Pinkish hover color */
-}
-
-/* Our Services section */
-.our-services {
-    background-color: #222;
-    padding: 60px 0;
-}
-
-.service-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #1E1E1E;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.service:hover {
-    transform: translateY(-10px);
-}
-
-.service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #66D9EF; /* Cyan service name color */
-}
-
-.service p {
-    color: #D4D4D4; /* Light text color */
-}
-
-.service .btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #FD971F; /* Orange button background */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.service .btn:hover {
-    background-color: #F92672; /* Pinkish hover color */
-}
-
-/* Blog section */
-.blog {
-    background-color: #1E1E1E;
-    padding: 60px 0;
-}
-
-.blog-posts {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.post {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.post:hover {
-    transform: translateY(-10px);
-}
-
-.post h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #66D9EF; /* Cyan heading color */
-}
-
-.post p {
-    color: #D4D4D4; /* Light text color */
-}
-
-.post .btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #FD971F; /* Orange button background */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.post .btn:hover {
-    background-color: #F92672; /* Pinkish hover color */
-}
-
-/* Contact Us section */
-.contact-us {
-    background-color: #222;
-    padding: 60px 0;
-}
-
-.contact-us h2 {
-    color: #66D9EF; /* Cyan heading color */
-}
-
-.contact-us p {
-    color: #D4D4D4; /* Light text color */
-}
-
-/* Footer section */
-.site-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.site-footer p {
-    font-size: 0.9rem;
-}
-
-/* Code style */
-.code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #333;
-    color: #66D9EF; /* Cyan code color */
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-size: 0.9rem;
-}
-
-/* Button style */
-.btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #FD971F; /* Orange button background */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #F92672; /* Pinkish hover color */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    .service, .post, .product {
-        width: calc(100% - 40px);
-    }
-}
+    background-color: #42a5f5; /*
