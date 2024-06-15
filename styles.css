@@ -6,9 +6,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     background-color: #f2f2f2;
+    color: #333; /* Default text color */
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
 
 .site-header h1 {
     margin-bottom: 10px;
+    color: #fff; /* Header text color */
 }
 
 .site-header nav ul {
@@ -98,6 +100,7 @@ body {
 
 h2 {
     margin-bottom: 20px;
+    color: #333; /* Section heading color */
 }
 
 /* Featured Products section */
@@ -140,6 +143,7 @@ h2 {
 
 .product p {
     margin-bottom: 15px;
+    color: #555; /* Product description color */
 }
 
 .product .btn {
@@ -170,9 +174,3 @@ h2 {
 
 .service {
     width: 300px;
-    margin: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in
