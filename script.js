@@ -39,14 +39,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Cart Functionality
     const addToCartButtons = document.querySelectorAll('.product .btn');
-    const cart = [];
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             const product = e.target.closest('.product');
             const productName = product.querySelector('h3').innerText;
             const productPrice = product.querySelector('p').innerText;
-            cart.push({ name: productName, price: productPrice });
+
+            const cartItem = {
+                name: productName,
+                price: productPrice,
+                quantity: 1 // For simplicity, assuming quantity is always 1 initially
+            };
+
+            // Check if item already exists in cart
+            const existingItem = cart.find(item => item.name === cartItem.name);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push(cartItem);
+            }
+
+            // Save cart to local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update cart display
             updateCart();
         });
     });
@@ -54,10 +72,22 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateCart() {
         const cartItems = document.getElementById('cart-items');
         cartItems.innerHTML = '';
+
         cart.forEach(item => {
             const li = document.createElement('li');
-            li.innerText = `${item.name} - ${item.price}`;
+            li.innerHTML = `${item.name} - ${item.price} - Quantity: ${item.quantity}`;
             cartItems.appendChild(li);
+        });
+    }
+
+    // Checkout Page Setup
+    const checkoutButton = document.getElementById('checkout-btn');
+    if (checkoutButton) {
+        checkoutButton.addEventListener('click', () => {
+            // Perform checkout actions (e.g., process payment, clear cart, etc.)
+            alert('Proceeding to checkout!');
+            localStorage.removeItem('cart'); // Clear cart after checkout (simulated)
+            updateCart(); // Update cart display after clearing
         });
     }
 });
