@@ -9,7 +9,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     background-color: #1e1e1e; /* Dark background */
-    color: #d4d4d4; /* Light text */
+    color: #ffffff; /* Light text */
 }
 
 .container {
@@ -20,8 +20,8 @@ body {
 
 /* Header styles */
 .site-header {
-    background-color: #333;
-    color: #fff;
+    background-color: #282c34;
+    color: #61dafb;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -32,7 +32,7 @@ body {
 
 .site-header h1 {
     margin-bottom: 10px;
-    color: #9cdcfe; /* Header text color */
+    color: #61dafb; /* Header text color */
 }
 
 .site-header nav ul {
@@ -45,7 +45,7 @@ body {
 }
 
 .site-header nav ul li a {
-    color: #d4d4d4; /* Navigation link color */
+    color: #61dafb; /* Navigation link color */
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -53,7 +53,7 @@ body {
 }
 
 .site-header nav ul li a:hover {
-    background-color: #555;
+    background-color: #444;
     border-radius: 5px;
 }
 
@@ -66,33 +66,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d4d4d4;
+    color: #ffffff;
     text-align: center;
 }
 
 .landing-page h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #ce9178; /* Syntax highlight color */
+    color: #ff79c6; /* Bright heading color */
 }
 
 .landing-page p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #dcdcaa; /* Syntax highlight color */
+    color: #8be9fd; /* Bright text color */
 }
 
 .landing-page .btn {
     padding: 10px 20px;
-    background-color: #007acc; /* Button color */
-    color: #fff;
+    background-color: #50fa7b; /* Bright button color */
+    color: #282c34;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .landing-page .btn:hover {
-    background-color: #005a9e;
+    background-color: #3dc763;
 }
 
 /* General Section Styles */
@@ -102,12 +102,12 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    color: #569cd6; /* Section heading color */
+    color: #bd93f9; /* Bright section heading color */
 }
 
 /* Featured Products section */
 .featured-products {
-    background-color: #252526; /* Dark section background */
+    background-color: #282c34; /* Dark section background */
     padding: 60px 0;
 }
 
@@ -121,7 +121,7 @@ h2 {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #3e3e42; /* Dark product background */
+    background-color: #44475a; /* Dark product background */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -141,31 +141,31 @@ h2 {
 .product h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #4ec9b0; /* Syntax highlight color */
+    color: #ffb86c; /* Bright product name color */
 }
 
 .product p {
     margin-bottom: 15px;
-    color: #dcdcaa; /* Product description color */
+    color: #f1fa8c; /* Bright product description color */
 }
 
 .product .btn {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #007acc;
-    color: #fff;
+    background-color: #50fa7b;
+    color: #282c34;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .product .btn:hover {
-    background-color: #005a9e;
+    background-color: #3dc763;
 }
 
 /* Our Services section */
 .our-services {
-    background-color: #252526; /* Dark section background */
+    background-color: #282c34; /* Dark section background */
     padding: 60px 0;
 }
 
@@ -179,7 +179,7 @@ h2 {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #3e3e42; /* Dark service background */
+    background-color: #44475a; /* Dark service background */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -192,26 +192,26 @@ h2 {
 .service h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #4ec9b0; /* Syntax highlight color */
+    color: #ffb86c; /* Bright service heading color */
 }
 
 .service p {
     margin-bottom: 15px;
-    color: #dcdcaa; /* Service description color */
+    color: #f1fa8c; /* Bright service description color */
 }
 
 .service .btn {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #007acc;
-    color: #fff;
+    background-color: #50fa7b;
+    color: #282c34;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .service .btn:hover {
-    background-color: #005a9e;
+    background-color: #3dc763;
 }
 
 /* Blog section */
@@ -230,7 +230,7 @@ h2 {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #3e3e42; /* Dark post background */
+    background-color: #44475a; /* Dark post background */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -243,46 +243,46 @@ h2 {
 .post h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #d7ba7d; /* Syntax highlight color */
+    color: #bd93f9; /* Bright post heading color */
 }
 
 .post p {
     margin-bottom: 15px;
-    color: #dcdcaa; /* Post description color */
+    color: #f1fa8c; /* Bright post description color */
 }
 
 .post .btn {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #007acc;
-    color: #fff;
+    background-color: #50fa7b;
+    color: #282c34;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .post .btn:hover {
-    background-color: #005a9e;
+    background-color: #3dc763;
 }
 
 /* Contact Us section */
 .contact-us {
-    background-color: #252526; /* Dark section background */
+    background-color: #282c34; /* Dark section background */
     padding: 60px 0;
 }
 
 .contact-us h2 {
-    color: #569cd6; /* Section heading color */
+    color: #bd93f9; /* Bright section heading color */
 }
 
 .contact-us p {
-    color: #dcdcaa; /* Text color */
+    color: #f1fa8c; /* Bright text color */
 }
 
 /* Footer Section */
 .site-footer {
     background-color: #333;
-    color: #d4d4d4;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
