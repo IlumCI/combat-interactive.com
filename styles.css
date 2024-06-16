@@ -8,7 +8,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #121212; /* Darker background */
     color: #ffffff; /* Light text */
 }
 
@@ -20,7 +20,7 @@ body {
 
 /* Header styles */
 .site-header {
-    background-color: #282c34;
+    background-color: #1f1f1f;
     color: #61dafb;
     padding: 10px 0;
     text-align: center;
@@ -74,12 +74,14 @@ body {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #ff79c6; /* Bright heading color */
+    animation: color-change 3s infinite;
 }
 
 .landing-page p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #8be9fd; /* Bright text color */
+    animation: color-change 3s infinite;
 }
 
 .landing-page .btn {
@@ -103,11 +105,12 @@ body {
 h2 {
     margin-bottom: 20px;
     color: #bd93f9; /* Bright section heading color */
+    animation: color-change 3s infinite;
 }
 
 /* Featured Products section */
 .featured-products {
-    background-color: #282c34; /* Dark section background */
+    background-color: #1f1f1f; /* Darker section background */
     padding: 60px 0;
 }
 
@@ -142,11 +145,13 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #ffb86c; /* Bright product name color */
+    animation: color-change 3s infinite;
 }
 
 .product p {
     margin-bottom: 15px;
     color: #f1fa8c; /* Bright product description color */
+    animation: color-change 3s infinite;
 }
 
 .product .btn {
@@ -165,7 +170,7 @@ h2 {
 
 /* Our Services section */
 .our-services {
-    background-color: #282c34; /* Dark section background */
+    background-color: #1f1f1f; /* Darker section background */
     padding: 60px 0;
 }
 
@@ -193,11 +198,13 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #ffb86c; /* Bright service heading color */
+    animation: color-change 3s infinite;
 }
 
 .service p {
     margin-bottom: 15px;
     color: #f1fa8c; /* Bright service description color */
+    animation: color-change 3s infinite;
 }
 
 .service .btn {
@@ -216,7 +223,7 @@ h2 {
 
 /* Blog section */
 .blog {
-    background-color: #1e1e1e; /* Dark section background */
+    background-color: #121212; /* Darker section background */
     padding: 60px 0;
 }
 
@@ -244,11 +251,13 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #bd93f9; /* Bright post heading color */
+    animation: color-change 3s infinite;
 }
 
 .post p {
     margin-bottom: 15px;
     color: #f1fa8c; /* Bright post description color */
+    animation: color-change 3s infinite;
 }
 
 .post .btn {
@@ -267,22 +276,43 @@ h2 {
 
 /* Contact Us section */
 .contact-us {
-    background-color: #282c34; /* Dark section background */
+    background-color: #1f1f1f; /* Darker section background */
     padding: 60px 0;
 }
 
 .contact-us h2 {
     color: #bd93f9; /* Bright section heading color */
+    animation: color-change 3s infinite;
 }
 
 .contact-us p {
     color: #f1fa8c; /* Bright text color */
+    animation: color-change 3s infinite;
 }
 
 /* Footer Section */
 .site-footer {
-    background-color: #333;
+    background-color: #222;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+}
+
+/* Keyframes for color change animation */
+@keyframes color-change {
+    0% {
+        color: #ff79c6;
+    }
+    25% {
+        color: #8be9fd;
+    }
+    50% {
+        color: #50fa7b;
+    }
+    75% {
+        color: #ffb86c;
+    }
+    100% {
+        color: #bd93f9;
+    }
 }
