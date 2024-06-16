@@ -19,6 +19,17 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="cart-icon">
+                <button id="cart-toggle" class="btn">Cart</button>
+                <div id="cart" class="cart-popup">
+                    <h3>Shopping Cart</h3>
+                    <ul id="cart-items"></ul>
+                    <div class="cart-buttons">
+                        <button id="clear-cart-btn" class="btn">Clear Cart</button>
+                        <button id="checkout-btn" class="btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -105,6 +116,10 @@
     <div id="cart">
         <h3>Shopping Cart</h3>
         <ul id="cart-items"></ul>
+        <div class="cart-buttons">
+            <button id="clear-cart-btn" class="btn">Clear Cart</button>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
