@@ -3,126 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Your Website Name</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your main stylesheet -->
+    <title>Developer Tools and Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header class="site-header">
         <div class="container">
-            <h1>Welcome to Your Website</h1>
+            <h1>Developer Tools and Services</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Featured Products</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle">Toggle Theme</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content: Landing Page -->
-    <section class="landing-page">
+    <section id="home" class="landing-page">
         <div class="container">
-            <h2>Transforming Ideas into Reality</h2>
-            <p>Welcome to our innovative world of <span class="code">web development</span> and <span class="code">software engineering</span> solutions.</p>
-            <a href="about.html" class="btn">Learn More</a>
+            <h2>Welcome to Developer Tools and Services</h2>
+            <p>Your one-stop shop for premium tools and services.</p>
+            <a href="#products" class="btn">Shop Now</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Insert your compelling description about your company here.</p>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
+    <section id="products" class="featured-products">
         <div class="container">
             <h2>Featured Products</h2>
             <div class="product-list">
                 <div class="product">
                     <img src="product1.jpg" alt="Product 1">
-                    <h3>Product 1 Name</h3>
-                    <p>Description of Product 1</p>
-                    <a href="#" class="btn">View Details</a>
+                    <h3>Product 1</h3>
+                    <p>$49.99</p>
+                    <a href="#" class="btn">Add to Cart</a>
                 </div>
                 <div class="product">
                     <img src="product2.jpg" alt="Product 2">
-                    <h3>Product 2 Name</h3>
-                    <p>Description of Product 2</p>
-                    <a href="#" class="btn">View Details</a>
+                    <h3>Product 2</h3>
+                    <p>$39.99</p>
+                    <a href="#" class="btn">Add to Cart</a>
                 </div>
-                <!-- Add more product entries as needed -->
+                <!-- Add more products as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Our Services Section -->
-    <section class="our-services">
+    <section id="services" class="our-services">
         <div class="container">
             <h2>Our Services</h2>
             <div class="service-list">
                 <div class="service">
-                    <h3>Web Development</h3>
-                    <p>From static websites to complex web applications, we bring your ideas to life.</p>
+                    <h3>Service 1</h3>
+                    <p>Details about Service 1.</p>
                     <a href="#" class="btn">Learn More</a>
                 </div>
                 <div class="service">
-                    <h3>Software Engineering</h3>
-                    <p>Custom software solutions tailored to your business needs, ensuring efficiency and scalability.</p>
+                    <h3>Service 2</h3>
+                    <p>Details about Service 2.</p>
                     <a href="#" class="btn">Learn More</a>
                 </div>
-                <div class="service">
-                    <h3>Consulting Services</h3>
-                    <p>Expert guidance in technology strategy, digital transformation, and project management.</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <!-- Add more service entries as needed -->
+                <!-- Add more services as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
-            <h2>Latest Blog Posts</h2>
+            <h2>Blog</h2>
             <div class="blog-posts">
                 <div class="post">
-                    <h3>How to Choose the Right Technology Stack for Your Project</h3>
-                    <p>Discover key factors to consider when selecting a technology stack for your next project.</p>
+                    <h3>Blog Post 1</h3>
+                    <p>Excerpt of Blog Post 1.</p>
                     <a href="#" class="btn">Read More</a>
                 </div>
                 <div class="post">
-                    <h3>The Importance of User Experience in Web Design</h3>
-                    <p>Explore why UX design is crucial for creating successful websites and applications.</p>
+                    <h3>Blog Post 2</h3>
+                    <p>Excerpt of Blog Post 2.</p>
                     <a href="#" class="btn">Read More</a>
                 </div>
-                <!-- Add more blog post entries as needed -->
+                <!-- Add more posts as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section class="contact-us">
+    <section id="contact" class="contact-us">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Include a contact form or contact information here.</p>
+            <p>Feel free to reach out for any inquiries.</p>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>&copy; 2024 Developer Tools and Services. All rights reserved.</p>
         </div>
     </footer>
 
+    <div id="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
