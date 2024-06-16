@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Services - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Developer Services - Products</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-listing">
+        <div class="container">
+            <div class="filters">
+                <h2>Filter Services</h2>
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value="all">All</option>
+                    <option value="web">Web Development</option>
+                    <option value="mobile">Mobile App Development</option>
+                    <option value="software">Software Development</option>
+                    <option value="design">UI/UX Design</option>
+                </select>
+                <label for="price-range">Price Range:</label>
+                <input type="range" id="price-range" min="0" max="100" value="0">
+                <span id="price-output">$0</span>
+            </div>
+
+            <div class="service-list">
+                <!-- Service cards dynamically generated -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Developer Tools and Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart">
+        <!-- Cart popup content -->
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
