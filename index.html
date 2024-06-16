@@ -3,61 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Tools and Services</title>
+    <title>Futuristic Online Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <h1>Developer Tools and Services</h1>
+            <h1>Futuristic Store</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#landing">Home</a></li>
+                    <li><a href="#featured">Featured Products</a></li>
+                    <li><a href="#services">Our Services</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="cart-icon">
-                <button id="cart-toggle" class="btn">Cart</button>
-                <div id="cart" class="cart-popup">
-                    <h3>Shopping Cart</h3>
-                    <ul id="cart-items"></ul>
-                    <div class="cart-buttons">
-                        <button id="clear-cart-btn" class="btn">Clear Cart</button>
-                        <button id="checkout-btn" class="btn">Checkout</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
 
-    <section id="home" class="landing-page">
+    <section id="landing" class="landing-page">
         <div class="container">
-            <h2>Welcome to Developer Tools and Services</h2>
-            <p>Your one-stop shop for premium tools and services.</p>
-            <a href="#products" class="btn">Shop Now</a>
+            <h2>Welcome to the Futuristic Online Store</h2>
+            <p>Discover the latest in technology and innovation.</p>
+            <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
 
-    <section id="products" class="featured-products">
+    <section id="featured" class="featured-products">
         <div class="container">
             <h2>Featured Products</h2>
             <div class="product-list">
-                <div class="product">
-                    <img src="product1.jpg" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>$49.99</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>$39.99</p>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-                <!-- Add more products as needed -->
+                <!-- Product cards will be dynamically generated here -->
             </div>
         </div>
     </section>
@@ -66,36 +43,16 @@
         <div class="container">
             <h2>Our Services</h2>
             <div class="service-list">
-                <div class="service">
-                    <h3>Service 1</h3>
-                    <p>Details about Service 1.</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <div class="service">
-                    <h3>Service 2</h3>
-                    <p>Details about Service 2.</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <!-- Add more services as needed -->
+                <!-- Service cards will be dynamically generated here -->
             </div>
         </div>
     </section>
 
     <section id="blog" class="blog">
         <div class="container">
-            <h2>Blog</h2>
+            <h2>Latest Blog Posts</h2>
             <div class="blog-posts">
-                <div class="post">
-                    <h3>Blog Post 1</h3>
-                    <p>Excerpt of Blog Post 1.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="post">
-                    <h3>Blog Post 2</h3>
-                    <p>Excerpt of Blog Post 2.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <!-- Add more posts as needed -->
+                <!-- Blog posts will be dynamically generated here -->
             </div>
         </div>
     </section>
@@ -103,22 +60,26 @@
     <section id="contact" class="contact-us">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Feel free to reach out for any inquiries.</p>
+            <p>Get in touch with our team for any inquiries.</p>
         </div>
     </section>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 Developer Tools and Services. All rights reserved.</p>
+            <p>&copy; 2024 Futuristic Online Store. All rights reserved.</p>
         </div>
     </footer>
 
-    <div id="cart">
-        <h3>Shopping Cart</h3>
-        <ul id="cart-items"></ul>
-        <div class="cart-buttons">
-            <button id="clear-cart-btn" class="btn">Clear Cart</button>
-            <button id="checkout-btn" class="btn">Checkout</button>
+    <div class="cart-popup">
+        <div class="cart-content">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </ul>
+            <div class="cart-actions">
+                <button id="clear-cart-btn" class="btn clear-cart-btn">Clear Cart</button>
+                <button id="checkout-btn" class="btn checkout-btn">Checkout</button>
+            </div>
         </div>
     </div>
 
