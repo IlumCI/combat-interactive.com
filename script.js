@@ -15,35 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Highlight Active Section in Navigation
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.site-header nav ul li a');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - document.querySelector('.site-header').offsetHeight;
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
-                link.classList.add('active');
-            }
-        });
-    });
-
-    // Cart Functionality
+    // Popup Notification as Cart
     const addToCartButtons = document.querySelectorAll('.product .btn');
     const cartPopup = document.querySelector('.cart-popup');
     const cartItems = document.getElementById('cart-items');
     const clearCartBtn = document.getElementById('clear-cart-btn');
     const checkoutBtn = document.getElementById('checkout-btn');
-    const cartToggle = document.getElementById('cart-toggle');
+    const cartToggle = document.querySelector('.cart-toggle');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     addToCartButtons.forEach(button => {
@@ -71,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Update cart display
             updateCart();
+            showCartNotification();
         });
     });
 
@@ -87,13 +66,68 @@ document.addEventListener("DOMContentLoaded", function () {
         cartToggle.innerText = `Cart (${cart.length})`;
     }
 
-    // Cart Popup Toggle
-    cartToggle.addEventListener('click', () => {
-        cartPopup.classList.toggle('show');
-        updateCart();
-    });
+    function showCartNotification() {
+        cartPopup.classList.add('show');
+        setTimeout(() => {
+            cartPopup.classList.remove('show');
+        }, 3000); // Hide after 3 seconds
+    }
 
     // Clear Cart
     clearCartBtn.addEventListener('click', () => {
         cart = [];
-       
+        localStorage.removeItem('cart');
+        updateCart();
+    });
+
+    // Checkout Button (clears cart for demo purposes)
+    checkoutBtn.addEventListener('click', () => {
+        alert('Checkout functionality to be implemented.');
+        cart = [];
+        localStorage.removeItem('cart');
+        updateCart();
+    });
+
+    // Initialize Cart on Page Load
+    updateCart();
+
+    // Dark Mode Toggle (for demonstration purposes)
+    const body = document.querySelector('body');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+    });
+
+    // User Personalization through Cookies (dummy implementation)
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+    }
+
+    function getCookie(name) {
+        const cookieName = `${name}=`;
+        const cookieArray = document.cookie.split(';');
+        
+        for (let i = 0; i < cookieArray.length; i++) {
+            let cookie = cookieArray[i].trim();
+            if (cookie.startsWith(cookieName)) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        
+        return null;
+    }
+
+    const userTheme = getCookie('user_theme');
+    if (userTheme) {
+        body.classList.add(userTheme);
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        const theme = body.classList.contains('light-mode') ? 'light-mode' : '';
+        setCookie('user_theme', theme, 30); // Set cookie for 30 days
+    });
+});
