@@ -37,13 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-    });
-
     // Cart Functionality
     const addToCartButtons = document.querySelectorAll('.product .btn');
     const cart = [];
