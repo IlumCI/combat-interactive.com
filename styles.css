@@ -8,8 +8,8 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
-    background-color: #f2f2f2;
-    color: #333; /* Default text color */
+    background-color: #1e1e1e; /* Dark background */
+    color: #d4d4d4; /* Light text */
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 
 .site-header h1 {
     margin-bottom: 10px;
-    color: #fff; /* Header text color */
+    color: #9cdcfe; /* Header text color */
 }
 
 .site-header nav ul {
@@ -45,7 +45,7 @@ body {
 }
 
 .site-header nav ul li a {
-    color: #fff;
+    color: #d4d4d4; /* Navigation link color */
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -66,23 +66,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #d4d4d4;
     text-align: center;
 }
 
 .landing-page h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #ce9178; /* Syntax highlight color */
 }
 
 .landing-page p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: #dcdcaa; /* Syntax highlight color */
 }
 
 .landing-page .btn {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #007acc; /* Button color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -90,7 +92,7 @@ body {
 }
 
 .landing-page .btn:hover {
-    background-color: #555;
+    background-color: #005a9e;
 }
 
 /* General Section Styles */
@@ -100,12 +102,12 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    color: #333; /* Section heading color */
+    color: #569cd6; /* Section heading color */
 }
 
 /* Featured Products section */
 .featured-products {
-    background-color: #fff;
+    background-color: #252526; /* Dark section background */
     padding: 60px 0;
 }
 
@@ -119,9 +121,9 @@ h2 {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #3e3e42; /* Dark product background */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -139,17 +141,18 @@ h2 {
 .product h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #4ec9b0; /* Syntax highlight color */
 }
 
 .product p {
     margin-bottom: 15px;
-    color: #555; /* Product description color */
+    color: #dcdcaa; /* Product description color */
 }
 
 .product .btn {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #333;
+    background-color: #007acc;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -157,12 +160,12 @@ h2 {
 }
 
 .product .btn:hover {
-    background-color: #555;
+    background-color: #005a9e;
 }
 
 /* Our Services section */
 .our-services {
-    background-color: #f2f2f2;
+    background-color: #252526; /* Dark section background */
     padding: 60px 0;
 }
 
@@ -174,3 +177,112 @@ h2 {
 
 .service {
     width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #3e3e42; /* Dark service background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4ec9b0; /* Syntax highlight color */
+}
+
+.service p {
+    margin-bottom: 15px;
+    color: #dcdcaa; /* Service description color */
+}
+
+.service .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.service .btn:hover {
+    background-color: #005a9e;
+}
+
+/* Blog section */
+.blog {
+    background-color: #1e1e1e; /* Dark section background */
+    padding: 60px 0;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #3e3e42; /* Dark post background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d7ba7d; /* Syntax highlight color */
+}
+
+.post p {
+    margin-bottom: 15px;
+    color: #dcdcaa; /* Post description color */
+}
+
+.post .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.post .btn:hover {
+    background-color: #005a9e;
+}
+
+/* Contact Us section */
+.contact-us {
+    background-color: #252526; /* Dark section background */
+    padding: 60px 0;
+}
+
+.contact-us h2 {
+    color: #569cd6; /* Section heading color */
+}
+
+.contact-us p {
+    color: #dcdcaa; /* Text color */
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: #333;
+    color: #d4d4d4;
+    padding: 20px 0;
+    text-align: center;
+}
